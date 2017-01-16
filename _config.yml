@@ -7,15 +7,15 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title                    : "Jiacheng Jiang"
+title_separator          : "|"
+name                     : "Jiacheng Jiang"
+description              : "My personal blog"
+url                      : "https://ajaxjiang96.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "ajaxjiang96/ajaxjiang96.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "BeforeWhitby"
 facebook:
   username               :
   app_id                 :
@@ -77,32 +77,32 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Jiacheng Jiang"
+  avatar           : "assets/images/Profile-Photo/Jiacheng-Jiang.jpg"
+  bio              : "A full stack developer. A graphic designer"
+  location         : "Toronto, Canada"
+  email            : "ajax.jiang@mail.utoronto.ca"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "100002052800537"
   foursquare       :
-  github           :
+  github           : "ajaxjiang96"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "jiacheng-jiang-4a720669"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "BeforeWhitby"
   vine             :
-  weibo            :
+  weibo            : "ajaxjiang"
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
@@ -244,3 +244,12 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Collections
+collections:
+  project:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
