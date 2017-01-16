@@ -8,7 +8,7 @@
 # Site Settings
 locale                   : "en"
 title                    : "Jiacheng Jiang"
-title_separator          : "|"
+title_separator          : "-"
 name                     : "Jiacheng Jiang"
 description              : "My personal blog"
 url                      : "https://ajaxjiang96.github.io"
@@ -57,7 +57,7 @@ yandex_site_verification :
 twitter:
   username               : "BeforeWhitby"
 facebook:
-  username               :
+  username               : "BeforeWhitby"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -70,9 +70,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-90462058-1
 
 
 # Site Author
