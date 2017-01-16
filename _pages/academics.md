@@ -15,6 +15,7 @@ author_profile: true
 - CSC343: Databases
 - CSC369: Operating Systems
 - IMC200: Innovation and Entrepreneurship
+- CSC384: Introduction to artificial intelligence
 
 ## Course Notes
 
