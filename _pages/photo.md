@@ -3,7 +3,10 @@ layout: splash
 title: "Photography"
 permalink: /photo/
 author_profile: true
-
+header:
+  image: /assets/images/header/photography.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/B0kNuKcK7q0)"
+  
 gallery:
   - url: /assets/images/photography/01.jpg
     image_path: /assets/images/photography/01-th.jpg

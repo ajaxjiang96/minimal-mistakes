@@ -3,6 +3,10 @@ layout: archive
 title: "Academics"
 permalink: /academics/
 author_profile: true
+header:
+  image: /assets/images/header/academics.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/3jRGSA2IH0c)"
+
 ---
 ## Courses I've Taken:
 
