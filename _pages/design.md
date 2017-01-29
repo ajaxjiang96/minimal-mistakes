@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: splash
 title: "Design"
 permalink: /design/
 header:
