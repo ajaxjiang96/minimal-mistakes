@@ -12,15 +12,15 @@ excerpt: "A card design sign up page"
 ---
 ![page title](/assets/images/design/dailyui/001/header.png)
 
-The page consists of a sign up form, a progress indicator, a blurred background image and a page title.
+The page consists of a sign up form, a progress indicator, a blurred background image and a page title.  
 
 ## Sign Up Form
 
-### Form Shape
+### Form
 
 I have chosen rounded rectangle for the shape of the sign up form, with a drop shadow (`0px 7px 50px rgba(0, 0, 0, .3)`) to analogue the material texture of a piece of paper. This concept is inspired by Google's Material Design Guideline, which claims that layers should have thickness. By using a paper-like visual effect, I'm trying to provide the user with a seamless experience.
 
-## Title
+### Title
 ![page title](/assets/images/design/dailyui/001/teaser.png)
 
 The page title (Sign up) comes with a rounded rectangle logo.
@@ -47,11 +47,11 @@ Selectors are not illustrated in the mockup, but selectable fields are indicated
 
 ### Validation Indicator
 
-Validation indicators may be the only bright-colored component in the form. The shape of the icon is also rounded rectangle, to match the shape of the form. The icon comes with a tick or a cross accordingly.
+Validation indicators may be the only bright-colored component in the form. The shape of the icon is also rounded rectangle, to match the shape of the form. The icon comes with a tick or a cross accordingly. When a field fails validation, the background turns light red (`#fb3aa`) and underline turns red (``#ed1c24``) with the indicator icon.
 
 ## Progress Indicator
 
-It's always necessary to notice the users of their current status. The indicator is vertically placed on the right of the form, to indicate the current step of signing up. The completed steps are solid colored, as the upcoming steps are colored in white with 50% opacity.
+It's always necessary to notice the users of their current status. The indicator is vertically placed on the right of the form, to indicate the current step of signing up. The completed steps are solid colored, as the upcoming steps are colored in white with 50% opacity. There is also a pop up bubble showing the percentage user has filled in the current section. Description can be added below the bubble as needed.
 
 ## Background
 
