@@ -4,8 +4,8 @@ title: doo.
 permalink: /project/doo
 project: doo
 header:
-  image: /assets/images/project/doo/header.jpg
-  teaser: /assets/images/project/doo/header.jpg
+  image: /assets/images/project/doo/header.png
+  teaser: /assets/images/project/doo/teaser.png
 excerpt: "doo. is a online platform for you to manage your time, together with your friends."
 
 ---
