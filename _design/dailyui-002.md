@@ -7,7 +7,7 @@ header:
   image: /assets/images/design/dailyui/002/header.png
   teaser: /assets/images/design/dailyui/002/teaser.png
   caption: "Photo credit: [**Jiacheng Jiang**](/)"
-excerpt: "A card design sign up page"
+excerpt: "一个可以抽拉发票的支付页面"
 
 gallery:
   - url: /assets/images/design/dailyui/002/01.png
