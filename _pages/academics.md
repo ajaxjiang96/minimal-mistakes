@@ -25,6 +25,6 @@
 
  <div class="grid__wrapper">
    {% for post in site.academics %}
-     {% include archivesingle.html type="grid" %}
+     {% include archive-single.html type="grid" %}
    {% endfor %}
  </div>
