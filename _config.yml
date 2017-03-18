@@ -287,9 +287,9 @@ collections:
   design:
     output: true
     permalink: /:collection/:path/
-  # academics:
-  #   output: true
-  #   permalink: /:collection/:path/
+  academics:
+    output: true
+    permalink: /:collection/:path/
   travel:
     output: true
     permalink: /:collection/:path/
