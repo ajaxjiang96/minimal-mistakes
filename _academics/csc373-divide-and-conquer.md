@@ -1,7 +1,7 @@
 ---
 layout: single
-title: CSC373 Divide and Conquer
-permalink: /academics/csc373-divide-and-conquer
+title: CSC373
+permalink: /academics/csc373
 #header:
 #  image: /assets/images/academics/csc373/header.jpg
 #  teaser: /assets/images/academics/csc309/teaser.jpg
@@ -9,7 +9,7 @@ permalink: /academics/csc373-divide-and-conquer
 excerpt: "Data Structure and Algo design"
 
 ---
-
+# Greedy Algorithm
 ## Intro
 
 To solve an instance of size $$n$$
@@ -60,3 +60,115 @@ Merge(A, p, q, r):
 ### Measure of interest
 
 number of comparisons of array elements
+
+# Graph Algorithm
+
+## Minimum Spanning tree
+
+_shortened form of the phrase "minimum-weight spanning tree."_
+
+__Input__: Adj - a list of $$G=(V, E), w : E \rightarrow \mathbb{R} $$  
+__Output__: $$T \subseteq G$$ - spanning tree of minimum weight
+
+### Kruskal's Algo
+- Consider edges in ___increasing order of weights___; keep adding the edges, diregarding those that create ___cycles___  
+- Runtime
+    $$ O(|E|\log |E|) $$
+    using Union-Find Data Structure
+
+### Prim's Algo
+- Start with an arbitrary vertex $$s\in V$$
+- Keep growing the partial tree by adding the a least weight edge going out of the tree.
+
+#### Pseudocode of Prim's Algo
+
+```
+Prims(Adj, w):
+    Pick arbitrary s in V
+    init Array cost of size |V|
+    init Array prec of size |V|
+
+    for v in V:
+        cost[v] = infinity
+        prev[v] = None
+
+    cost[s] = 0
+
+    init min priority queue Q(V)
+
+    while Q is not empty:
+        v = Q.extractMin()
+        for u in Adj[v]:
+            if w(v, w) < cost[u]:
+                cost[u] = w(v, u)
+                prev[u] = v
+
+    return prev
+```
+
+- Runtime:
+    $$O((|V|+|E|)\log|V|)$$
+
+## Shortest Path Problem
+
+__Input__: Weighted graph (directed or undirected):  
+    $$G=(V,E)$$  
+    $$C:E\rightarrow\mathbb{R}$$ Cost  
+    $$s\in V$$ Source  
+__Output__: $$dist[]$$ so that $$\forall u\in V, dist[u]=d(s,u)$$, where $$f(u,v)$$ is the shortest path from $$u$$ to $$v$$ or $$\infty$$ if such path does not exist.
+
+### Dijkstra Algorithm
+___Dijkstra is Greedy___
+#### Pseudocode of Dijkstra
+```
+Dijkstra(Adj, c, s):
+    init Array dist[] of size |V|
+    init Array prev[] of size |V|
+
+    for v in V:
+        dist[v] = infinity
+        prev[v] = None
+
+    dist[s] = 0
+
+    Q = minPQ(V) // by dist[]
+
+    while Q is not empty:
+        v = Q.extractMin()
+        for u in Adj[v]:
+            if dist[v] + c[v, u] <= dist[u]:
+                dist[u] = dist[v] + c[v, u] //decreasing
+                prev[u] = v
+
+    return dist
+```
+
+Runtime: (If PQ implemented by binary heaps),
+$$((|V| + |E|)\log|V|)
+
+### Bellman-Ford Algorithm
+
+#### Pseudocode for Bellman-Ford
+
+```
+update(e = (u, v)):
+    if dist[v] > dist[u] + c(u, v):
+        dist[v] = dist[u] + c(u, v)
+        prev[v] = u
+
+Bellman-Ford(G, c, s):
+    init array dist[] of size |V|
+    init array prev[] of size |V|
+
+    for v in V:
+        dist[v] = infinity
+        prev[v] = None
+
+    dist[s] = 0
+
+    for k = 1 to |V|:
+        for e in E:
+        update(e)
+
+    return dist[]
+```
