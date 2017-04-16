@@ -1,6 +1,13 @@
+---
+title: "License"
+permalink: /docs/license/
+excerpt: "License for Minimal Mistakes Jekyll Theme."
+last_modified_at: 2016-04-13T15:05:12-04:00
+---
+
 The MIT License (MIT)
 
-Copyright (c) 2017 Michael Rose
+Copyright (c) {{ site.time | date: '%Y' }} Michael Rose
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
