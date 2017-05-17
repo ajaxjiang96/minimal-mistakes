@@ -153,6 +153,7 @@ $$((|V| + |E|)\log|V|)
 ```
 update(e = (u, v)):
     if dist[v] > dist[u] + c(u, v):
+        # If there's a better way to reach v
         dist[v] = dist[u] + c(u, v)
         prev[v] = u
 
@@ -172,3 +173,43 @@ Bellman-Ford(G, c, s):
 
     return dist[]
 ```
+
+#### Floyd-Warshall & Johnson's
+
+## Network Flow
+
+### local search
+- Start with some feasible solution
+- Perform local changes to get a better solution
+
+### Ford-folkerson
+- Start with all 0 flow (feasible)
+- find augumenting $$s$$ to $$t$$ path in ___residual graph___
+
+## Max-Flow Min-Cut Theorem
+1. $$f$$ is a max-flow
+2. no augumenting path in $$G_f$$
+3. there exist a cut $$(S, T)$$ so that
+$$|f| = c(S,T)$$
+
+Runtime:
+-   Case 1: Capacities are positive real numbers
+    -   If some capacities are irrational, FF might not terminate.
+    -   Such examples FF might converge to a flow that is no a maximum
+-   Case 2: capacities are $$\mathbb{N}$$
+    -   let $$f*$$ be max flow, FF can be made to run
+    $$O(|f*||E|)$$
+    each time we augment with path $$P$$, value of the flow increases by $$c(P)\geq 1$$  
+    $$\Rightarrow$$ number of augumentations
+    $$\leq |f*|$$  
+    Each augmentation can be found by DFS/BFS in time
+    $$O(|E|)$$
+    assuming no redundant nodes (___not___ polynomial time)
+
+### Edmonds-Karp Algorithm
+Run FF using shortest unweighted path for augmentation Can be done with BFS in polynomial time.
+
+Runtime:
+$$O(|V||E|^2)$$
+
+## Muti-source Multi-sink Max-Flow
