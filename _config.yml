@@ -316,18 +316,6 @@ defaults:
       comments:  true
       share: true
       related: true
-  # _sketch
-  - scope:
-      path: ""
-      type: sketch
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments:  true
-      share: true
-      related: true
-
 
 # Collections
 collections:
@@ -335,9 +323,6 @@ collections:
     output: true
     permalink: /:collection/:path/
   design:
-    output: true
-    permalink: /:collection/:path/
-  sketch:
     output: true
     permalink: /:collection/:path/
   academics:
