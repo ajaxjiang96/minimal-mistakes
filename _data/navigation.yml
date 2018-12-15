@@ -12,6 +12,8 @@ main:
     url: /project/
   - title: "Design"
     url: /design/
+  - title: "Sketch"
+    url: /sketch/
   - title: "Photography"
     url: /photo/
   - title: "Travelling"
