@@ -108,9 +108,6 @@ author:
   location         : "Toronto, Canada"
   email            : "ajax.jiang@mail.utoronto.ca"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ajax.jiang@mail.utoronto.ca"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "http://ajaxjiang96.com"
@@ -141,9 +138,6 @@ footer:
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
@@ -322,6 +316,17 @@ defaults:
       comments:  true
       share: true
       related: true
+  # _sketch
+  - scope:
+      path: ""
+      type: sketch
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments:  true
+      share: true
+      related: true
 
 
 # Collections
@@ -332,8 +337,11 @@ collections:
   design:
     output: true
     permalink: /:collection/:path/
-  academics:
+  sketch:
     output: true
+    permalink: /:collection/:path/
+  academics:
+    output: false
     permalink: /:collection/:path/
   travel:
     output: true
