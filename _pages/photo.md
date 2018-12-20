@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Photography"
-permalink: /photo/
+permalink: /portfolio/photo/
 author_profile: true
 header:
   image: /assets/images/header/photography.jpg

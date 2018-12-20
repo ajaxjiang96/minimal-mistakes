@@ -7,6 +7,7 @@ header:
   image: /assets/images/project/elema/header.jpg
   teaser: /assets/images/project/elema/teaser.jpg
 excerpt: "Taking too much time deciding what for lunch today? Elema will help you out."
+date: 2017-05-01T12:34:00Z
 ---
 
 ## Intro

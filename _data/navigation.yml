@@ -10,11 +10,15 @@ main:
   #   url: /collection-archive/
   - title: "Project"
     url: /project/
-  - title: "Design"
-    url: /design/
-  - title: "Sketch"
-    url: /sketch/
-  - title: "Photography"
-    url: /photo/
+  - title: "Portfolio"
+    url: /portfolio/
+  # - title: "Graphics"
+  #   url: /graphics/
+  # - title: "UI"
+  #   url: /ui/
+  # - title: "Sketch"
+  #   url: /sketch/
+  # - title: "Photography"
+  #   url: /photo/
   - title: "Travelling"
     url: /travel/

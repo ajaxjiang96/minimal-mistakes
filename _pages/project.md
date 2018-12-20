@@ -9,7 +9,7 @@ header:
 ---
 
 <div class="grid__wrapper">
-  {% for post in site.project %}
+  {% for post in site.project reversed %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>

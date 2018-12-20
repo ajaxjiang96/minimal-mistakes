@@ -305,10 +305,10 @@ defaults:
       comments: # true
       share: true
       related: true
-  # _design
+  # _graphics
   - scope:
       path: ""
-      type: design
+      type: graphics
     values:
       layout: single
       author_profile: true
@@ -316,13 +316,37 @@ defaults:
       comments:  true
       share: true
       related: true
-
+  # _ui
+  - scope:
+      path: ""
+      type: ui
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments:  true
+      share: true
+      related: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true 
 # Collections
 collections:
   project:
     output: true
     permalink: /:collection/:path/
-  design:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  graphics:
+    output: true
+    permalink: /:collection/:path/
+  ui:
     output: true
     permalink: /:collection/:path/
   academics:

@@ -7,7 +7,7 @@ header:
   image: /assets/images/project/doo/header.png
   teaser: /assets/images/project/doo/teaser.png
 excerpt: "doo. is a online platform for you to manage your time, together with your friends."
-
+date: 2016-12-23T14:15:00Z
 ---
 
 <img src="/assets/images/project/doo/logo.jpg" width="144px">
