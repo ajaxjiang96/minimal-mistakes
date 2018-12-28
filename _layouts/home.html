@@ -6,7 +6,8 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% for post in paginator.posts %}
+{% assign result = paginator.posts | concatArray: paginator.ui | concatArray: paginator.projects | concatArray: paginator.graphics %}
+{% for post in result %}
   {% include archive-single.html %}
 {% endfor %}
 
