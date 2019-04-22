@@ -5,7 +5,7 @@ permalink: /project/elema
 project: elema
 header:
   image: /assets/images/project/onecalendar/header.png
-  teaser: /assets/images/project/onecalendar/teaser.jpg
+  teaser: /assets/images/project/onecalendar/teaser.png
 excerpt: "A simple calendar with lunar calendar information implemented with Flutter"
 date: 2019-04-22T17:50:00Z
 ---
