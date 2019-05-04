@@ -3,6 +3,7 @@ layout: single
 title: Elema
 permalink: /project/elema
 project: elema
+category: project
 header:
   image: /assets/images/project/elema/header.jpg
   teaser: /assets/images/project/elema/teaser.jpg
