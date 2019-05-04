@@ -27,3 +27,7 @@ Any feedback, please send to me by [this form](https://forms.gle/P7eKpwr6eWYJ8RC
 - View lunar calendar information of the day
 - get a rough explaination on the lunar calender and Fengshui terms.
 - Night mode with a dark theme.
+
+## Privacy Policy
+
+This app (version 1.0) will not read any personal information from the user.
