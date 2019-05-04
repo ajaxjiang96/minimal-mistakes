@@ -2,7 +2,7 @@
 layout: single
 title: One Calendar
 permalink: /project/onecalendar
-project: elema
+project: onecalendar
 category: project
 header:
   image: /assets/images/project/onecalendar/header.png
