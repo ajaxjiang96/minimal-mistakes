@@ -11,7 +11,7 @@ function MainProfile() {
       <div className="Info">
         <div className="Name">AJAX (JIACHENG) JIANG</div>
         <div className="Location">
-          <i class={"fas fa-map-marker-alt"}></i> Suzhou, China / Toronto, Canada
+          <i className={"fas fa-map-marker-alt"}></i> Suzhou, China / Toronto, Canada
       </div>
         <div className="Skills">
           Full Stack Developer / Graphics Designer
@@ -31,7 +31,7 @@ function MainProfile() {
 function SocialLink(title, logo, url) {
   return<a href={url} className="SocialLink" target="_blank" rel="noopener noreferrer">
       {/* {title} */}
-      <i class={logo}></i>
+      <i className={logo}></i>
     </a>
 }
 
