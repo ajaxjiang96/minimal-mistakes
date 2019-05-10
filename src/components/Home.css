@@ -1,0 +1,14 @@
+.Footer {
+  padding: 0px 40px;
+}
+
+.Footer .Copyright {
+  color: #999;
+  padding: 40px;
+  text-align: center;
+}
+
+.Home {
+  display: contents;
+  flex-direction: column
+}

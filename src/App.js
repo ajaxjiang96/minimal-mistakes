@@ -4,30 +4,50 @@ import React from 'react';
 import './App.css';
 import './components/Header.css'
 import logo from './assets/images/site/favicon.ico';
-import MainProfile from './components/MainProfile';
+
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-left">
-        <div className="Header">
-          <header className="App-header">
-            <div className="App-title">
-              <img src={logo} className="App-logo" alt="logo" />
-              {/* Jiacheng Jiang */}
-            </div>
-            <ul className="Navbar">
-              <li><a href="default.asp">Home</a></li>
-              <li><a href="news.asp">Portfolio</a></li>
-              <li><a href="contact.asp">About Me</a></li>
-            </ul>
-          </header>
+    <Router>
+      <div className="App">
+          <div className="App-left">
+          <div className="Header">
+
+            <header className="App-header">
+              <div className="App-title">
+                <img src={logo} className="App-logo" alt="logo" />
+                {/* Jiacheng Jiang */}
+              </div>
+              <ul className="Navbar">
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/portfolio">Home</Link></li>
+                <li><Link to="/aboutme">Home</Link></li>
+              </ul>
+            </header>
+          </div>
+          <Route path="/" exact component={Home} />
         </div>
-        <MainProfile></MainProfile>
+        {/* <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about/">About</Link>
+            </li>
+            <li>
+              <Link to="/users/">Users</Link>
+            </li>
+          </ul>
+        </nav> */}
+        {/* <Route path="/about/" component={About} />
+        <Route path="/users/" component={Users} /> */}
       </div>
 
-    </div>
+    </Router>
   );
 }
 
