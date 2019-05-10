@@ -2,10 +2,10 @@
   width: calc(100% - 80px);
   background-color: white;
   padding: 40px;
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  box-shadow: -3px 3px 6px rgba(0,0,0,0.16);
   /* justify-content: space-between; */
   display: block;
-  position: fixed;
+  /* position: fixed; */
   z-index: 999;
   font-size: 22px;
 }
