@@ -2,8 +2,7 @@
 layout: single
 title: doo.
 permalink: /project/doo
-category: project
-project: doo
+# project: doo
 header:
   image: /assets/images/project/doo/header.png
   teaser: /assets/images/project/doo/teaser.png

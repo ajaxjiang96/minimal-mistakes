@@ -3,7 +3,6 @@ layout: single
 title: Whalesper
 permalink: /project/whalesper
 project: whalesper
-category: project
 header:
   image: /assets/images/project/whalesper/header.png
   teaser: /assets/images/project/whalesper/teaser.png

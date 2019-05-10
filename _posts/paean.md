@@ -3,7 +3,6 @@ layout: single
 title: Paean
 permalink: /project/paean
 project: paean
-category: project
 header:
   image: /assets/images/project/paean/header.png
   teaser: /assets/images/project/paean/teaser.png

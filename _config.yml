@@ -64,7 +64,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -216,6 +216,13 @@ paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: America/Toronto # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+autopages:
+  enabled: true
+  # ... etc.
+  collections:
+    permalink: /:coll/
+    enabled: true
+
 
 # Plugins (previously gems:)
 plugins:
@@ -286,6 +293,13 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
   # _project
   - scope:
       path: ""
