@@ -7,6 +7,13 @@
   display: block;
   position: fixed;
   z-index: 999;
+  font-size: 22px;
+}
+
+.App-logo {
+  height: 40px;
+  margin: -7px;
+
 }
 
 .App-header {

@@ -1,5 +1,5 @@
 import React from 'react';
-// import logo from './logo.svg';
+import logo from '../assets/images/site/favicon.ico';
 import './Header.css';
 
 function Header() {
@@ -7,9 +7,8 @@ function Header() {
     <div className="Header">
       <header className="App-header">
         <div className="App-title">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <img src={logo} className="App-logo" alt="logo" />
           {/* Jiacheng Jiang */}
-          Logo
         </div>
         <ul className="Navbar">
           <li><a href="default.asp">Home</a></li>
