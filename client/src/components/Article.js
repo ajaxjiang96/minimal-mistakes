@@ -6,6 +6,18 @@ const ReactMarkdown = require('react-markdown')
 function Article(input) {
   return (
     <div className="Article">
+      <div className="Head">
+        <div className="closeButton">
+          <i className="fa fa-times"></i>
+        </div>
+
+        <h1> One Calendar</h1>
+        <div className="Info">
+          <div className="Date">2017 / 05 / 09</div>|
+          <div className="Author">Jiacheng Jiang</div>
+        </div>
+        <hr />
+      </div>
       <ReactMarkdown source={input} />
     </div>
   );
