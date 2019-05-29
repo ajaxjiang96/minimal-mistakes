@@ -3,17 +3,29 @@ import React from 'react';
 // import Header from './components/Header'
 import './App.css';
 import './components/Header.css'
-import logo from './assets/images/site/favicon.ico';
+import logo from './assets/images/site/logo-white.png';
+import sideFace from './assets/images/site/sideface.png';
 
-import Home from './components/Home';
-import Article from './components/Article';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import RecentFeed from './components/RecentFeed';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import sampleMD from './assets/markdown/sample.md'
+import ExpandButton from './components/ExpandButton';
+import Portfolio from './components/Portfolio/Portfolio';
 
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this._expandRightArea = this._expandRightArea.bind(this);
+  }
+  componentWillMount() {
+    this.setState({
+      expanded: false
+    })
+  }
+
   componentDidMount() {
-    console.log(sampleMD)
     fetch(sampleMD)
       .then(response => {
         return response.text()
@@ -27,41 +39,40 @@ class App extends React.Component {
       })
   }
 
+  _expandRightArea() {
+    this.setState({
+      expanded: !this.state.expanded
+    })
+  }
+
   render() {
-    return (
-      <Router>
-        <div className="App">
-          <div className="App-left">
-            <div className="Header">
+      return (
+          <div className="App">
+              <div className="Header">
 
-              <header className="App-header">
-                <div className="App-title">
-                  <img src={logo} className="App-logo" alt="logo" />
-                  {/* Jiacheng Jiang */}
-                </div>
-                <ul className="Navbar">
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/portfolio">Home</Link></li>
-                  <li><Link to="/aboutme">Home</Link></li>
-                </ul>
-              </header>
-            </div>
-            <Route path="/" exact component={Home} />
+                  <header className="App-header">
+                      <img src={logo} className="App-logo" alt="logo"/>
+                  </header>
+              </div>
+              <div className={`App-left ${this.state.expanded ? "" : "active"}`}>
+                  <div className="HugeTitle">
+                      Jiacheng
+                      <br/>
+                      Jiang
+                  </div>
+                  <img src={sideFace} className="side-face" alt="side face sketch art"/>
+              </div>
+              <div className={`App-right ${this.state.expanded ? "active" : ""}`}>
+                  <Router>
+                      <ExpandButton defaultOnClick={this._expandRightArea}/>
+                      <Route path="/" exact component={RecentFeed}/>
+                      <Route path="/portfolio" component={Portfolio}/>
+                  </Router>
+              </div>
           </div>
-          <div className="App-right active">
-            {this.state && this.state.text ? Article(this.state.text) : ""}
-          </div>
-        </div>
 
-      </Router>
-    );
+      );
   }
 }
-
-// function App() {
-
-
-
-// }
 
 export default App;

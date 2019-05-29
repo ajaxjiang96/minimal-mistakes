@@ -1,0 +1,78 @@
+z.ExpandButton {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  position: fixed;
+  top: 61.8%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ExpandButton:hover{
+  width: 200px;
+  height: 200px;
+  top: calc(61.8% - 50px);
+}
+
+.ExpandButton .ChevronContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  /* height: 100%; */
+  transition: all 0.5s ease-out;
+}
+.ExpandButton .ChevronContainer.Rotated {
+  transform: rotate(-180deg);
+}
+
+.nav-bar {
+  display: flex;
+  /* text-decoration: none; */
+  list-style-type: none;
+  /* justify-content:  */
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar.hidden {
+  display: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  display: block;
+  margin: 0 0 20px;
+  padding: 0;
+  /* display: inline; */
+}
+
+.nav-bar a:last-child {
+  margin-bottom: 0;
+}
+
+.nav-bar a {
+  color: #999;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease-out 0.3s;
+}
+
+.nav-bar a {
+  color: #999;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease-out 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #666;
+}

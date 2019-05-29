@@ -1,10 +1,10 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import Header from './components/Header'
-// import './Home.css';
+import './RecentFeed.css';
 // import './components/Header.css'
 
-import MainProfile from './MainProfile';
+// import MainProfile from './MainProfile';
 import RecentPosts from './RecentPosts';
 
 
@@ -13,7 +13,7 @@ function Home({ match }) {
   return (
     <div className="Home">
 
-      <MainProfile/>
+      {/* <MainProfile></MainProfile> */}
       <RecentPosts {...match}/>
       <div className="Footer">
         <hr/>

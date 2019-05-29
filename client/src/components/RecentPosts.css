@@ -1,5 +1,8 @@
 .RecentPosts {
   /* flex:1; */
+  /* padding: 20px 40px; */
+  margin: 100px;
   padding: 20px 40px;
-  min-height: calc(100% - 131px);
+  background-color: white;
+  /* min-height: calc(100% - 131px); */
 }

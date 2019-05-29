@@ -1,11 +1,11 @@
 .Header {
   width: calc(100% - 80px);
-  background-color: white;
+  /* background-color: white; */
   padding: 40px;
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  /* box-shadow: 0px 3px 6px rgba(0,0,0,0.16); */
   /* justify-content: space-between; */
   display: block;
-  position: sticky;
+  position: fixed;
   z-index: 999;
   font-size: 22px;
   left: 0;
@@ -14,7 +14,7 @@
 
 .App-logo {
   height: 40px;
-  margin: -7px;
+  /* margin-left: -7px; */
 
 }
 
@@ -28,33 +28,3 @@
   display: block;
 }
 
-.Navbar {
-  display: flex;
-  /* text-decoration: none; */
-  list-style-type: none;
-  /* justify-content:  */
-  justify-content: flex-end;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.Navbar li {
-  text-decoration: none;
-  display: block;
-  margin: 0;
-  margin-left: 20px;
-  padding: 0;
-  /* display: inline; */
-}
-
-.Navbar li a {
-  color: #999;
-  font-weight: bold;
-  text-decoration: none;
-  transition: ease-in-out 0.3s;
-}
-
-.Navbar li a:hover {
-  color: #666;
-}

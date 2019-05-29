@@ -10,7 +10,7 @@ function Header() {
           <img src={logo} className="App-logo" alt="logo" />
           {/* Jiacheng Jiang */}
         </div>
-        <ul className="Navbar">
+        <ul className="nav-bar">
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">Portfolio</a></li>
           <li><a href="contact.asp">About Me</a></li>
