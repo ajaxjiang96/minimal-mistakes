@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e583ab2f-4dd7-491f-803a-94db37585f7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ajaxjiang96.github.io.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ajax.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/RecentPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/RecentPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/RecentPosts.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/RecentPosts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/RecentPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/RecentPosts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/db/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/db/models.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,22 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Article.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Article.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-722" />
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Header.css">
           <provider selected="true" editor-type-id="text-editor" />
@@ -90,7 +59,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/RecentPosts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -99,6 +68,25 @@
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/db/models.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/db/post.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-233" />
           </provider>
         </entry>
       </file>
@@ -137,6 +125,7 @@
         <option value="$PROJECT_DIR$/client/src/components/RecentFeed.js" />
         <option value="$PROJECT_DIR$/client/src/components/RecentPost.js" />
         <option value="$PROJECT_DIR$/client/src/components/RecentPosts.js" />
+        <option value="$PROJECT_DIR$/api/db/models.js" />
       </list>
     </option>
   </component>
@@ -160,20 +149,13 @@
             <path>
               <item name="ajaxjiang96.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="ajaxjiang96.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ajaxjiang96.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="ajaxjiang96.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ajaxjiang96.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ajaxjiang96.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,6 +174,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -215,16 +199,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559103846238</updated>
-      <workItem from="1559103848822" duration="524000" />
+      <workItem from="1559103848822" duration="670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="524000" />
+    <option name="totallyTimeSpent" value="670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20735383" />
@@ -359,6 +342,21 @@
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/db/models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/db/post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233" />
       </provider>
     </entry>
   </component>
