@@ -104,13 +104,15 @@
 } */
 
 .App-right {
-  display: block;
+  /* display: block; */
   width: 38.2%;
   height: 100%;
   position: absolute;
+  display: flex;
+  flex-direction: column;
   /* box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.16); */
   overflow-y: scroll;
-  overflow-x: visible;
+  overflow-x: hidden;
   /* background-color: #fff; */
   z-index: 80;
   left: 61.8%;
@@ -136,13 +138,14 @@
 }
 
 .Footer {
-  padding: 0px 40px;
+  /* padding: 0px 100px; */
 }
 
 .Footer .Copyright {
   color: #fff;
   padding: 40px;
   text-align: center;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.5) */
 }
 
 h1 {

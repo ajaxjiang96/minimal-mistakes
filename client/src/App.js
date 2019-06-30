@@ -7,17 +7,19 @@ import logo from './assets/images/site/logo-white.png';
 import sideFace from './assets/images/site/sideface.png';
 
 import RecentFeed from './components/RecentFeed';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import sampleMD from './assets/markdown/sample.md'
-import ExpandButton from './components/ExpandButton';
+// import ExpandButton from './components/ExpandButton';
 import Portfolio from './components/Portfolio/Portfolio';
-
+import './components/ExpandButton.css'
+import MainProfile from './components/MainProfile';
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
     this._expandRightArea = this._expandRightArea.bind(this);
+    this._forceExpandRightArea = this._forceExpandRightArea.bind(this);
   }
   componentWillMount() {
     this.setState({
@@ -45,33 +47,62 @@ class App extends React.Component {
     })
   }
 
+  _forceExpandRightArea() {
+    this.setState({
+      expanded: true
+    })
+  }
+
+
   render() {
-      return (
-          <div className="App">
-              <div className="Header">
+    return (
+      <div className="App">
+        <div className="Header">
 
-                  <header className="App-header">
-                      <img src={logo} className="App-logo" alt="logo"/>
-                  </header>
-              </div>
-              <div className={`App-left ${this.state.expanded ? "" : "active"}`}>
-                  <div className="HugeTitle">
-                      Jiacheng
-                      <br/>
-                      Jiang
-                  </div>
-                  <img src={sideFace} className="side-face" alt="side face sketch art"/>
-              </div>
-              <div className={`App-right ${this.state.expanded ? "active" : ""}`}>
-                  <Router>
-                      <ExpandButton defaultOnClick={this._expandRightArea}/>
-                      <Route path="/" exact component={RecentFeed}/>
-                      <Route path="/portfolio" component={Portfolio}/>
-                  </Router>
-              </div>
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+          </header>
+        </div>
+        <div className={`App-left ${this.state.expanded ? "" : "active"}`}>
+          <div className="HugeTitle">
+            Jiacheng<br />
+            Jiang
           </div>
+          <img src={sideFace} className="side-face" alt="side face sketch art" />
+        </div>
+        <div className={`App-right ${this.state.expanded ? "active" : ""}`}>
+          <Router>
+            {/* <ExpandButton defaultOnClick={this._expandRightArea} /> */}
+            <div className="nav-bar">
+              <div className="left">
+                <NavLink to="/" activeClassName='is-active' exact>Home</NavLink>
+                <NavLink to="/portfolio" activeClassName='is-active' onClick={this._forceExpandRightArea}>Portfolio</NavLink>
+                <NavLink to="/about" activeClassName='is-active'>About</NavLink>
+              </div>
+              <div className="right">
+                <a onClick={this._expandRightArea}>
+                  {this.state.expanded ?
+                    <div className="collapse"><i className="fas fa-compress" /></div>
+                    : <div className="expand"><i className="fas fa-expand" /></div>
+                  }
+                </a>
+              </div>
 
-      );
+            </div>
+            <Route path="/" exact component={RecentFeed} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/about" component={MainProfile} />
+          </Router>
+          <div className="Footer">
+            {/* <hr /> */}
+            <div className="Copyright">
+              &copy; Jiacheng Jiang 2019
+          </div>
+          </div>
+        </div>
+      </div>
+
+    );
   }
 }
 

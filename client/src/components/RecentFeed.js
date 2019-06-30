@@ -15,12 +15,7 @@ function Home({ match }) {
 
       {/* <MainProfile></MainProfile> */}
       <RecentPosts {...match}/>
-      <div className="Footer">
-        <hr/>
-        <div className="Copyright">
-          &copy; Jiacheng Jiang 2019
-          </div>
-      </div>
+      
 
     </div>
   );

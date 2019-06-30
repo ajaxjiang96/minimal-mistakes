@@ -1,4 +1,4 @@
-z.ExpandButton {
+.ExpandButton {
   width: 100px;
   height: 100px;
   background-color: #fff;
@@ -36,12 +36,25 @@ z.ExpandButton {
   /* text-decoration: none; */
   list-style-type: none;
   /* justify-content:  */
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0;
-  padding: 0;
+  padding: 40px 100px;
 }
+
+.nav-bar .left {
+  display: flex;
+  /* text-decoration: none; */
+  list-style-type: none;
+  /* justify-content:  */
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  /* padding: 40px; */
+}
+
 
 .nav-bar.hidden {
   display: none;
@@ -50,29 +63,41 @@ z.ExpandButton {
 .nav-bar a {
   text-decoration: none;
   display: block;
-  margin: 0 0 20px;
+  margin: 0 40px 10px 0;
   padding: 0;
   /* display: inline; */
 }
 
 .nav-bar a:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .nav-bar a {
-  color: #999;
+  color: #fff;
+  /* height: 100%; */
+  padding-bottom: 5px;
+  margin-bottom: -5px;
   font-weight: bold;
   text-decoration: none;
   transition: ease-out 0.3s;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+
 }
 
 .nav-bar a {
-  color: #999;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   transition: ease-out 0.3s;
 }
 
 .nav-bar a:hover {
-  color: #666;
+  /* color: #666; */
+  opacity: 0.5;
+}
+
+.nav-bar a.is-active {
+ /* text-decoration: underline; */
+ border-bottom: 2px solid white;
 }

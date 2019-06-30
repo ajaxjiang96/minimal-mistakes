@@ -1,32 +1,35 @@
 .PortfolioContainer {
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
-  padding-right: 50px;
+  flex:1;
+  justify-content: space-between;
+  /* overflow-x: scroll; */
+  /* padding-right: 50px; */
+  padding: 0 100px 100px 100px;
 }
 
-.ProjectCoverContainer {
-  margin: 100px;
+.PortfolioCoverContainer {
+  /* margin: 100px; */
   margin-right: 0px;
   /* height: 100%; */
-  /* width: 500px; */
+  max-width: 375px;
   display: flex;
   justify-content: flex-start;
   background-color: white;
 }
 
-.ProjectCoverContainer.Expanded {
+.PortfolioCoverContainer.Expanded {
   width: 100%;
 }
 
-.ProjectCoverContainer:last-of-type {
+/* .PortfolioCoverContainer:last-of-type {
   margin-right: 50px;
-}
+} */
 
-.ProjectCover {
-  width: 400px;
+.PortfolioCover {
+  max-width: 375px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -68,12 +71,12 @@
 
 }
 
-/* .ProjectCover:hover {
+/* .PortfolioCover:hover {
   background-filter: blur(8px);
   -webkit-filter: blur(8px);
 } */
 
-.ProjectCoverBackdrop {
+.PortfolioCoverBackdrop {
   /* position: absolute; */
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
   font-size: 72px;

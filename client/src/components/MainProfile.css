@@ -39,15 +39,11 @@
   border: 1px solid #eee;
   margin-right: 20px;
   transition: ease-in-out 0.3s;
-  color: #999;
+  color: #fff;
 }
 
 .MainProfile .SocialLinks .SocialLink:hover {
-  padding: 20px;
-  /* min-width: 60px; */
-  border: 1px solid #999;
-  margin-right: 20px;
-  color:#333
+  opacity: 0.5;
 }
 
 .MainProfile .SocialLinks .SocialLink:last-child {
@@ -71,19 +67,20 @@
   font-weight: bold;
   font-size: 22px;
   line-height: 35px;
-  color: #333;
+  color: #fff;
 }
 
 .MainProfile .Info .Location {
   font-weight: light;
   font-size: 17px;
   line-height: 25px;
-  color: #333;
+  color: #fff;
 }
 
 .MainProfile .Info .Skills {
   font-weight: light;
   font-size: 17px;
   line-height: 25px;
-  color: #999;
+  color: #fff;
+  opacity: 0.5;
 }
