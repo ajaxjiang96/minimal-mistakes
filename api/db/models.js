@@ -3,10 +3,10 @@ import mongoose from 'mongoose';
 import Post from './post';
 
 const connectDb = () => {
-  return mongoose.connect(process.env.DATABASE_URL);
+    return mongoose.connect(process.env.DATABASE_URL);
 };
 
-const models = { Post };
+const models = {Post};
 
 /* title: {
     type: String,
@@ -14,7 +14,7 @@ const models = { Post };
   md: {
     type: String,
   },
-  postId: {
+  postId: {s
     type: String,
     unique: true
   },
@@ -24,21 +24,21 @@ const models = { Post };
   */
 
 const createPosts = async () => {
-  const post1 = new models.Post({
-    title: 'One Calendar',
-    md: ``
-  });
+    const post1 = new models.Post({
+        title: 'One Calendar',
+        md: ``
+    });
 
-  const message1 = new models.Message({
-    text: 'Published the Road to learn React',
-    user: user1.id,
-  });
+    const message1 = new models.Message({
+        text: 'Published the Road to learn React',
+        user: user1.id,
+    });
 
-  await message1.save();
+    await message1.save();
 
-  await user1.save();
+    await user1.save();
 };
 
-export { connectDb };
+export {connectDb};
 
 export default models;
