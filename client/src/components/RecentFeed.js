@@ -9,7 +9,7 @@ import RecentPosts from './RecentPosts';
 
 
 function Home({ match }) {
-  console.log("match", match);
+  // console.log("match", match);
   return (
     <div className="Home">
 

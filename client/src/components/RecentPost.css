@@ -26,10 +26,11 @@
 
 .RecentPostBody h1 {
   margin: 0;
+  font-size: 17px;
 }
 
 .RecentPostBody .PostDate {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: light;
   color: #999;
 }
@@ -42,7 +43,7 @@
 }
 
 .RecentPostBody .Excerpt {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: light;
   color: #666;
