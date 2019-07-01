@@ -27,7 +27,7 @@ class Article extends React.Component{
       }
     render() {
         return (
-            <div className="Article">
+            <article className="Article">
                 <div className="Head">
                     {/* <div className="closeButton">
                         <i className="fa fa-times"/>
@@ -42,7 +42,7 @@ class Article extends React.Component{
                     <hr/>
                 </div>
                 <ReactMarkdown source={this.state.text}/>
-            </div>
+            </article>
         );
     }
     

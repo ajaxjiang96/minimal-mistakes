@@ -76,7 +76,7 @@ class App extends React.Component {
             <div className="nav-bar">
               <div className="left">
                 <NavLink to="/" activeClassName='is-active' exact>Home</NavLink>
-                <NavLink to="/portfolio" activeClassName='is-active' onClick={this._forceExpandRightArea}>Portfolio</NavLink>
+                {/* <NavLink to="/portfolio" activeClassName='is-active' onClick={this._forceExpandRightArea}>Portfolio</NavLink> */}
                 <NavLink to="/about" activeClassName='is-active'>About</NavLink>
               </div>
               <div className="right">
