@@ -16,7 +16,7 @@ export const getPosts = (req: Request, res: Response,  next: NextFunction) => {
     if (posts) {
       return res.send(posts);
     }
-    return res.send([])
+    return res.send([]);
   });
 };
 
