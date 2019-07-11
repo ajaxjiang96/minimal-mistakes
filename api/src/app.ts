@@ -3,13 +3,13 @@ import compression from "compression";  // compresses requests
 import session from "express-session";
 import bodyParser from "body-parser";
 import lusca from "lusca";
-import dotenv from "dotenv";
 import mongo from "connect-mongo";
 import flash from "express-flash";
 import path from "path";
 import mongoose from "mongoose";
 import passport from "passport";
 import bluebird from "bluebird";
+import cors from "cors";
 import { MONGODB_URI, SESSION_SECRET } from "./util/secrets";
 
 const MongoStore = mongo(session);
@@ -31,7 +31,7 @@ const app = express();
 // Connect to MongoDB
 const mongoUrl = MONGODB_URI;
 (<any>mongoose).Promise = bluebird;
-
+mongoose.set("useCreateIndex", true);
 mongoose.connect(mongoUrl, { useNewUrlParser: true} ).then(
   () => { /** ready to use. The `mongoose.connect()` promise resolves to undefined. */ },
 ).catch(err => {
@@ -43,6 +43,7 @@ mongoose.connect(mongoUrl, { useNewUrlParser: true} ).then(
 app.set("port", process.env.PORT || 3000);
 app.set("views", path.join(__dirname, "../views"));
 app.set("view engine", "pug");
+app.use(cors());
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -58,8 +59,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
-// app.use(lusca.xframe("SAMEORIGIN"));
-// app.use(lusca.xssProtection(true));
+app.use(lusca.xframe("SAMEORIGIN"));
+app.use(lusca.xssProtection({
+  enabled: false
+}));
 app.use((req, res, next) => {
   res.locals.user = req.user;
   next();
@@ -86,6 +89,8 @@ app.use(
 /**
  * Primary app routes.
  */
+
+// const router = express.Router()
 app.get("/", homeController.index);
 app.get("/login", userController.getLogin);
 app.post("/login", userController.postLogin);
@@ -104,8 +109,9 @@ app.post("/account/password", passportConfig.isAuthenticated, userController.pos
 app.post("/account/delete", passportConfig.isAuthenticated, userController.postDeleteAccount);
 app.get("/account/unlink/:provider", passportConfig.isAuthenticated, userController.getOauthUnlink);
 app.get("/post/:postId", postController.getPost);
-app.post("/post", postController.addNewPost);
 app.get("/posts", postController.getPosts);
+// app.post("/post", postController.addNewPost);
+// app.put("/post/:postId", postController.updatePost);
 
 /**
  * API examples routes.

@@ -21,10 +21,24 @@ export const getPosts = (req: Request, res: Response,  next: NextFunction) => {
 };
 
 export const addNewPost = (req: Request, res: Response, next: NextFunction) => {
-  console.log(req.body);
   const post = new Post(req.body);
   post.save((err) => {
     if (err) { return next(err); }
     return res.send("ok");
+  });
+
+
+};
+
+export const updatePost = (req: Request, res: Response, next: NextFunction) => {
+  Post.findOneAndUpdate({
+    _id: req.params.postId
+  }, req.body
+    , (err, post) => {
+    if (err) { return next(err); }
+    if (post) {
+      return res.send("ok");
+    }
+    return res.sendStatus(500);
   });
 };

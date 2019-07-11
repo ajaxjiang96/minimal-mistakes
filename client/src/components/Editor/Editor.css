@@ -1,0 +1,80 @@
+.editor-container {
+    flex:1;
+    padding: 0px 100px;
+    flex-direction: row;
+    display: flex;
+}
+
+.editor-view {
+    flex:0.5;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll
+}
+
+/* .editor-view > div {
+    flex: 1
+} */
+
+
+
+.preview-view {
+    flex:1;
+    background: white;
+    border-left: 1px solid #eee;
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+input.title-input {
+    font-size: 22px;
+    padding: 20px;
+    /* flex:1 */
+    border: none;
+    border-bottom: 1px solid #eee
+}
+
+input.excerpt-input {
+    /* font-size: 22px; */
+    padding: 20px;
+    /* flex:1 */
+    border: none;
+    border-bottom: 1px solid #eee
+}
+
+.action-bar {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    /* position: fixed; */
+    bottom: 0;
+    background: white;
+    /* width: 100%; */
+    border-top: 1px solid #eee;
+    justify-content: flex-end
+}
+
+.action-bar button{
+    padding: 10px 20px;
+    color: white;
+    background: rgb(0, 132, 255);
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s box-shadow
+}
+
+.action-bar button:hover{
+    box-shadow: 0px 3px 6px rgba(0, 132, 255, 0.7);
+    cursor: pointer;
+}
+
+.CodeMirror {
+    height: 100% !important;
+  }
+  
+  .CodeMirror-scroll {
+    overflow-x: auto;
+    overflow-y: hidden !important;
+    /* margin-left: -20px; */
+  }

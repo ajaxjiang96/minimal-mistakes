@@ -1,0 +1,80 @@
+.nav-bar {
+    display: flex;
+    /* text-decoration: none; */
+    list-style-type: none;
+    /* justify-content:  */
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 40px 100px;
+  }
+  
+  .nav-bar .left {
+    display: flex;
+    /* text-decoration: none; */
+    list-style-type: none;
+    /* justify-content:  */
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    /* padding: 40px; */
+  }
+  
+  
+  .nav-bar.hidden {
+    display: none;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    display: block;
+    margin: 0 40px 10px 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* display: inline; */
+  }
+  
+  
+  
+  .nav-bar a:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-bar a {
+    color: #fff;
+    /* height: 100%; */
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease-out 0.3s;
+    border-radius: 2px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+  
+  }
+  
+  .nav-bar .expand-button {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    /* margin: 0 40px 10px 0; */
+    padding: 0;
+    /* display: inline; */
+  }
+  
+  .nav-bar .expand-button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .nav-bar a:hover {
+    /* color: #666; */
+    opacity: 0.5;
+  }
+  
+  .nav-bar a.is-active {
+   /* text-decoration: underline; */
+   border-bottom: 2px solid white;
+  }
