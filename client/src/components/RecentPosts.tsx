@@ -56,7 +56,7 @@ class RecentPosts extends React.Component<RecentPostProps, PostsState> {
     componentDidMount() {
         console.log(this.props)
 
-        let url = (process.env.SERVER ? process.env.SERVER : "http://localhost:8333") + "/posts";
+        let url = (process.env.REACT_APP_SERVER ? process.env.REACT_APP_SERVER : "http://localhost:8333") + "/posts";
         console.log(url)
         fetch(url)
             .then(response => response.json())
