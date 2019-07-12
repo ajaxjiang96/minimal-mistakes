@@ -1,12 +1,15 @@
 .MainProfile {
-  height: calc(100% - 111px);
+  /* height: calc(100% - 111px); */
   /* height: 100%; */
   /* margin-top: 100px; */
-
+  /* padding: 40px 0px; */
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
+  flex: 1;
+  overflow-y: scroll;
+  /* mar */
 }
 
 .MainProfile .ProfilePhoto {
@@ -22,9 +25,10 @@
   height: 160px;
   border-radius: 220px;
   /* border-width: 2px; */
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   justify-content: center;
   align-content: center;
+  margin-top: 40px
 }
 
 .MainProfile .SocialLinks {
@@ -32,6 +36,66 @@
   flex-direction: row;
   padding: 40px;
 }
+
+.MainProfile .experiences {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 400px;
+  background: white;
+  /* padding:40px 0px; */
+
+}
+
+.MainProfile .experiences h1{
+  margin: 20px 40px;
+}
+
+.MainProfile .experiences .exp-container {
+  padding: 0px 40px;
+  flex-direction: row;
+  display: flex;
+  border-bottom: 1px solid #eee
+}
+
+/* .MainProfile .experiences .exp-container {
+} */
+
+.MainProfile .experiences .exp-container:hover {
+  background: #eee;
+}
+
+.exp-container .img-container{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.exp-container .exp-logo {
+  max-width: 75px;
+  object-fit: contain
+}
+
+.exp-container .exp-detail {
+  flex-direction: column;
+  margin:20px 40px;
+}
+
+.exp-detail .exp-title {
+  /* font-size: 14px; */
+  font-weight: bold
+}
+
+.exp-detail .exp-name {
+  font-size: 14px;
+  color: #999
+}
+
+.exp-detail .exp-period {
+  font-size: 14px;
+  color: #333
+}
+
 
 .MainProfile .SocialLinks .SocialLink {
   padding: 20px;
@@ -49,6 +113,7 @@
 .MainProfile .SocialLinks .SocialLink:last-child {
   margin-right: 0;
 }
+
 /* 
 .MainProfile .SocialLinks .SocialLink i {
   color: #999;

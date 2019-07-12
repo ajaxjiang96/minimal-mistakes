@@ -27,7 +27,7 @@ class RecentPosts extends React.Component<RecentPostProps, PostsState> {
     }
     showArticle(_id: string) {
         this.props.expandFunction();
-        let url = (process.env.SERVER ? process.env.SERVER : "http://localhost:8333/") + "post/" + _id;
+        let url = (process.env.REACT_APP_SERVER ? process.env.REACT_APP_SERVER : "http://localhost:8333/") + "post/" + _id;
         this.setState(
             { articleDisplayed: true },
 
