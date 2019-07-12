@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "686b37a59c28e4518f38f392dab04af2",
+    "revision": "72f7f33ba1847fdc6877393f6af4e5e6",
     "url": "/index.html"
   },
   {
-    "revision": "fc92f166fce94ad19a29",
+    "revision": "61f20f63a38888cd675b",
     "url": "/static/css/2.3b394954.chunk.css"
   },
   {
-    "revision": "37edb4ef0850272f5274",
-    "url": "/static/css/main.e0f7ab75.chunk.css"
+    "revision": "72e8626565aaebe90720",
+    "url": "/static/css/main.ffed11a6.chunk.css"
   },
   {
-    "revision": "fc92f166fce94ad19a29",
-    "url": "/static/js/2.92e3e173.chunk.js"
+    "revision": "61f20f63a38888cd675b",
+    "url": "/static/js/2.d3e10de4.chunk.js"
   },
   {
-    "revision": "37edb4ef0850272f5274",
-    "url": "/static/js/main.cf2ec9ef.chunk.js"
+    "revision": "72e8626565aaebe90720",
+    "url": "/static/js/main.0dc3b2fb.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -90,5 +90,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6b001b0f0674fb6baad60b53d9e1f221",
     "url": "/static/media/sideface.6b001b0f.png"
+  },
+  {
+    "revision": "5d0cd1b087f4d70f6025c29b49fdb188",
+    "url": "/static/media/uoft.5d0cd1b0.png"
+  },
+  {
+    "revision": "f523c3d40b39064d312c92347c9788e0",
+    "url": "/static/media/utada-logo.f523c3d4.png"
   }
 ]);
