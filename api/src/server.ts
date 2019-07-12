@@ -13,14 +13,14 @@ app.use(errorHandler());
  * Start Express server.
  */
 
-const server = process.env.NODE_ENV == "production" ? https.createServer({
+const server = process.env.NODE_ENV === "production" ? https.createServer({
   key: fs.readFileSync(process.env.KEY),
   cert: fs.readFileSync(process.env.CERT),
   passphrase: process.env.PASSPHRASE
 }, app)
   .listen(app.get("port"), () => {
     console.log(
-      "  App is running at http://localhost:%d in %s mode",
+      "  App is running at https://localhost:%d in %s mode",
       app.get("port"),
       app.get("env")
     );
