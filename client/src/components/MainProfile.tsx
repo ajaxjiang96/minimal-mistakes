@@ -3,6 +3,8 @@ import myphoto from '../assets/images/site/Jiacheng-Jiang-2.jpeg';
 import './MainProfile.css';
 import uoftLogo from "../assets/images/site/exp/uoft.png"
 import utadaLogo from "../assets/images/site/exp/utada-logo.png"
+import intactLogo from "../assets/images/site/exp/intact.png"
+import zjgflsLogo from "../assets/images/site/exp/zjgfls-dark.png"
 function MainProfile() {
   return (
     <div className="MainProfile">
@@ -26,14 +28,16 @@ function MainProfile() {
       </div>
 
       <div className="experiences">
-        <h1>Experience</h1>
-        {experience("Frontend Developer", "Intact Finanacial Corporation", "https://www.intact.ca/content/intact/qc/en/boilerplate-content/header/_jcr_content/par/header/logo.img.png/1524582619038.png", "2017.5", "2018.7", "https://www.intact.ca/", "emp")}
+        <h1>Related Experiences</h1>
+        {experience("Frontend Developer", "Intact Finanacial Corporation", intactLogo, "2017.5", "2018.7", "https://www.intact.ca/", "emp")}
+        <h1>Other Experiences</h1>
         {experience("President", "UofT Application Development Association", utadaLogo, "2017.9", "2018.9", "http://www.uoftada.com/", "emp")}
         {experience("Vice President, Design Department", "UofT Application Development Association", utadaLogo, "2016.9", "2017.5", "http://www.uoftada.com/", "emp")}
 
         <h1>Education</h1>
 
         {experience("Bachelor's Degree, Computer Science", "University of Toronto", uoftLogo, "2014.9", "2019.6", "https://www.utoronto.ca/", "edu")}
+        {experience("International Baccalaureate® Diploma", "Zhangjiaghang Foreign Language School", zjgflsLogo, "2011.9", "2014.5", "https://www.zjgfls.com/", "edu")}
       </div>
 
     </div>

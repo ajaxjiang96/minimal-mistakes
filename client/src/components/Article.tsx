@@ -1,7 +1,6 @@
 import React from 'react';
 // import logo from '../assets/images/site/favicon.ico';
 import './Article.css';
-import * as defaultArticle from '../assets/markdown/sample.md';
 import ReactMarkdown from 'react-markdown';
 import { ArticleProps, ArticleState } from './models/posts';
 class Article extends React.Component<ArticleProps, ArticleState> {

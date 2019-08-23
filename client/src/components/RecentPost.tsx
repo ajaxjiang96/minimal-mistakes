@@ -17,7 +17,7 @@ const RecentPost: React.FC<RecentPostProps> = (props) => {
 
         <div className="RecentPostContainer" onClick={() => props.onClick()}>
             <div className="RecentPost">
-                <img src={process.env.REACT_APP_IMG_SERVER + props.teaser} alt="" className="Teaser"/>
+                <img src={process.env.REACT_APP_IMG_SERVER + props.teaser} alt={props.title + " cover photo"} className="Teaser"/>
                 <div className="RecentPostBody">
                     <h1>
                         {props.title}

@@ -10,7 +10,7 @@ function ConstructPost(title: string, excerpt: string, date: Date, teaser: strin
         excerpt: excerpt,
         teaser: teaser,
         date: date,
-        _id: _id
+        _id: _id,
     }
 }
 
@@ -29,16 +29,16 @@ class RecentPosts extends React.Component<RecentPostProps, PostsState> {
         this.props.expandFunction();
         let url = (process.env.REACT_APP_SERVER ? process.env.REACT_APP_SERVER : "http://localhost:8333/") + "post/" + _id;
         this.setState(
-            { articleDisplayed: true },
-
+            { articleDisplayed: true, loading: true },
             () => fetch(url)
                 .then(response => response.json())
                 .then((post: PostArticle) => {
                     console.log(post)
                     this.setState({
                         currentArticle: post,
-                    }, ()=> this.articleDiv.current!.scrollTo({
-                        top:0,
+                        loading: false
+                    }, () => this.articleDiv.current!.scrollTo({
+                        top: 0,
                         behavior: 'smooth'
                     }));
                 }).catch((err) => console.error(err))
@@ -77,18 +77,13 @@ class RecentPosts extends React.Component<RecentPostProps, PostsState> {
                 <div className="recent-posts">
                     <div className="post-list">
                         {this.state.posts ? this.state.posts.map((post, i) => <RecentPost key={i} excerpt={post.excerpt} title={post.title} teaser={post.teaser} date={post.date} onClick={() => this.showArticle(post._id)} />) : null}
-                        {/* <RecentPost article={}/>
-                        <RecentPost />
-                        <RecentPost />
-                        <RecentPost />
-                        <RecentPost />
-                        <RecentPost />
-                        <RecentPost /> */}
                     </div>
                     {
                         this.state.articleDisplayed ? <div className="article-container" ref={this.articleDiv}>
-                            <Article
-                                article={this.state.currentArticle}></Article>
+                            {this.state.loading
+                                ? this.renderLoading()
+                                : <Article
+                                    article={this.state.currentArticle}></Article>}
                         </div> : null
                     }
 
@@ -97,6 +92,14 @@ class RecentPosts extends React.Component<RecentPostProps, PostsState> {
             </div>
 
         );
+    }
+
+    renderLoading() {
+        return <div className="article-container">
+            <div className="loading-container">
+                <div className="lds-ripple"><div></div><div></div></div>
+            </div>
+        </div>
     }
 
 }
