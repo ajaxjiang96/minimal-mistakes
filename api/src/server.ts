@@ -13,23 +13,30 @@ app.use(errorHandler());
  * Start Express server.
  */
 
-const server = process.env.NODE_ENV === "production" ? https.createServer({
-  key: fs.readFileSync(process.env.KEY),
-  cert: fs.readFileSync(process.env.CERT),
-  passphrase: process.env.PASSPHRASE
-}, app)
-  .listen(app.get("port"), () => {
+// const server = process.env.NODE_ENV === "production" ? https.createServer({
+//   key: fs.readFileSync(process.env.KEY),
+//   cert: fs.readFileSync(process.env.CERT),
+//   passphrase: process.env.PASSPHRASE
+// }, app)
+//   .listen(app.get("port"), () => {
+//     console.log(
+//       "  App is running at https://localhost:%d in %s mode",
+//       app.get("port"),
+//       app.get("env")
+//     );
+//     console.log("  Press CTRL-C to stop\n");
+//   }) : app.listen(app.get("port"), () => {
+//     console.log(
+//       "  App is running at http://localhost:%d in %s mode",
+//       app.get("port"),
+//       app.get("env")
+//     );
+//     console.log("  Press CTRL-C to stop\n");
+//   });
+
+const server = app.listen(app.get("port"), () => {
     console.log(
-      "  App is running at https://localhost:%d in %s mode",
-      app.get("port"),
-      app.get("env")
-    );
-    console.log("  Press CTRL-C to stop\n");
-  }) : app.listen(app.get("port"), () => {
-    console.log(
-      "  App is running at http://localhost:%d in %s mode",
-      app.get("port"),
-      app.get("env")
+      "  App is running at http://localhost:%d in %s mode"
     );
     console.log("  Press CTRL-C to stop\n");
   });
