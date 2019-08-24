@@ -76,7 +76,7 @@ class RecentPosts extends React.Component<RecentPostProps, PostsState> {
 
                 <div className="recent-posts">
                     <div className="post-list">
-                        {this.state.posts ? this.state.posts.map((post, i) => <RecentPost key={i} excerpt={post.excerpt} title={post.title} teaser={post.teaser} date={post.date} onClick={() => this.showArticle(post._id)} />) : null}
+                        {this.state.posts && this.state.posts.length ? this.state.posts.map((post, i) => <RecentPost key={i} excerpt={post.excerpt} title={post.title} teaser={post.teaser} date={post.date} onClick={() => this.showArticle(post._id)} />) : this.renderNullList()}
                     </div>
                     {
                         this.state.articleDisplayed ? <div className="article-container" ref={this.articleDiv}>
@@ -92,6 +92,16 @@ class RecentPosts extends React.Component<RecentPostProps, PostsState> {
             </div>
 
         );
+    }
+
+    renderNullList() {
+        return <div className="RecentPostContainer">
+        <div className="RecentPost">
+            I haven't published any posts yet!<br /> Please come back later.
+        </div>
+
+        <hr/>
+    </div>
     }
 
     renderLoading() {
