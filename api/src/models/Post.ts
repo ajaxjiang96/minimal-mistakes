@@ -18,7 +18,8 @@ const postSchema = new mongoose.Schema({
   date: Date,
   excerpt: String,
   author: String,
-  body: String
+  body: String,
+  published: Boolean
 }, { timestamps: true });
 
 export const Post = mongoose.model<PostDocument>("Post", postSchema);

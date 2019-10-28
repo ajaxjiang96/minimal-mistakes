@@ -1,7 +1,8 @@
 export type PostsState = {
     posts?: [Post],
     articleDisplayed: boolean,
-    currentArticle: PostArticle
+    currentArticle: PostArticle,
+    loading: boolean
 }
 
 export type Post = {

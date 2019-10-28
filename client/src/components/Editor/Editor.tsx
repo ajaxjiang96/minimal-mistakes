@@ -6,18 +6,7 @@ import CodeMirror from "react-codemirror";
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/mode/markdown/markdown';
 import 'codemirror/mode/javascript/javascript';
-
-import ReactMarkdown from 'react-markdown';
-// import ReactMde, {commands} from "react-mde";
-// import "react-mde/lib/styles/css/react-mde-all.css";
-// import { Editor, EditorState } from 'draft-js';
 import 'draft-js/dist/Draft.css'
-import {
-    // BrowserRouter as Router,
-    // Route,
-    // Link,
-    match
-} from 'react-router-dom';
 import { Post, PostArticle, PostsState } from "../models/posts";
 import Article from '../Article';
 

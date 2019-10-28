@@ -11,7 +11,7 @@ export const getPost = (req: Request, res: Response,  next: NextFunction) => {
 };
 
 export const getPosts = (req: Request, res: Response,  next: NextFunction) => {
-  Post.find({}, {title: 1, teaser: 1, excerpt: 1, date: 1}, (err, posts) => {
+  Post.find({published: true}, {title: 1, teaser: 1, excerpt: 1, date: 1}, (err, posts) => {
     if (err) { return next(err); }
     if (posts) {
       return res.send(posts);
