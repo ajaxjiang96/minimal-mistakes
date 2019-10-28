@@ -157,3 +157,7 @@ hr {
   border-top: 1px solid #eee;
 }
 
+.my-icon {
+  display: block;
+  height: 40px;
+}

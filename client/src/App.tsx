@@ -11,6 +11,9 @@ import MyEditor from './components/Editor/Editor';
 
 import logo from './assets/images/site/logo-white.png';
 import sideFace from './assets/images/site/sideface.png';
+import homeIcon from './assets/icons/list.svg';
+import portIcon from './assets/icons/folder.svg';
+import meIcon from './assets/icons/me.svg';
 
 type AppState = {
   expanded: boolean
@@ -63,9 +66,9 @@ class App extends React.Component<{}, AppState> {
             {/* <ExpandButton defaultOnClick={this._expandRightArea} /> */}
             <div className="nav-bar">
               <div className="left">
-                <NavLink to="/" activeClassName='is-active' exact>Home</NavLink>
-                {/* <NavLink to="/portfolio" activeClassName='is-active' onClick={this._forceExpandRightArea}>Portfolio</NavLink> */}
-                <NavLink to="/about" activeClassName='is-active'>About</NavLink>
+                <NavLink to="/" activeClassName='is-active' className="nav-link" exact> <img src={homeIcon} className="my-icon"/></NavLink>
+                <NavLink to="/portfolio" activeClassName='is-active' onClick={this._forceExpandRightArea}> <img src={portIcon} className="my-icon"/></NavLink>
+                <NavLink to="/about" activeClassName='is-active'> <img src={meIcon} className="my-icon"/></NavLink>
               </div>
               <div className="right">
                 <div className="expand-button" onClick={this._expandRightArea}>
